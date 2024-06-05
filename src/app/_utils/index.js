@@ -29,8 +29,8 @@ export const formatDataForModal = (data) => {
     summary: summary || '',
     attendees:
       attendees?.map?.(({ email }) => ({ label: email, key: email })) || [],
-    startDate: start.dateTime,
-    endDate: end.dateTime,
+    startDate: new Date(start.dateTime),
+    endDate: new Date(end.dateTime),
     description: description || '',
     sessionNotes: sessionNotes || '',
   };

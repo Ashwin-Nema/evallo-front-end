@@ -49,6 +49,8 @@ const CustomLoginButton = ({
     flow: 'auth-code',
   });
 
+  console.log(process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID)
+  console.log(process.env.NEXT_PUBLIC_BACKEND_URL)
   return (
     <>
       <Button
